@@ -1,0 +1,44 @@
+<aside class="w-20 gray-4 flex flex-column">
+
+  <LinkTo class="flex flex-column flex-grow-1 ma4 link"
+          @route="application">
+    <div class="f2 text-green center">Sproeier</div>
+    <div class="f2 text-blue center">Server</div>
+  </LinkTo>
+
+  <LinkTo class='ma4 w-70 flex-grow-1 gray-2 flex flex-column link text-black justify-around'
+          @route='sprinkler'>
+    <div class='mt3 f3 center'>
+      Actieve sproeier:
+    </div>
+    <div class='mb3 f3 center'>
+      Geen
+    </div>
+  </LinkTo>
+
+  <LinkTo class='ma4 w-70 flex-grow-1 gray-2 flex flex-column link text-black justify-around'
+          @route='temperature'>
+    <div class='mt3 f3 center'>
+      Temperatuur:
+    </div>
+    <div class='mb3 f3 center'>
+      15°C
+    </div>
+    <div class='f3 center'>
+      Luchtvochtigheid:
+    </div>
+    <div class='mb3 f3 center'>
+      53%
+    </div>
+  </LinkTo>
+
+  <LinkTo class='ma4 w-70 flex-grow-1 gray-2 flex flex-column link text-black justify-around'
+          @route='battery'>
+    <div class='mt3 f3 center'>
+      Batterij
+    </div>
+    <div class='mb3 f3 center'>
+      72%
+    </div>
+  </LinkTo>
+</aside>

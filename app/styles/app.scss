@@ -1,0 +1,84 @@
+@mixin font-face($name) {
+  @font-face {
+    font-family: $name;
+    src:  url("/fonts/#{$name}.ttf") format("truetype"),
+  }
+}
+
+@include font-face('SairaCondensed-Black');
+@include font-face('SairaCondensed-Bold');
+@include font-face('SairaCondensed-ExtraBold');
+@include font-face('SairaCondensed-ExtraLight');
+@include font-face('SairaCondensed-Light');
+@include font-face('SairaCondensed-Medium');
+@include font-face('SairaCondensed-Regular');
+@include font-face('SairaCondensed-SemiBold');
+@include font-face('SairaCondensed-Thin');
+
+.saira-black {
+  font-family: 'SairaCondensed-Black';
+}
+
+.saira-bold {
+  font-family: 'SairaCondensed-Bold';
+}
+
+.saira-extra-bold {
+  font-family: 'SairaCondensed-ExtraBold';
+}
+
+.saira-extra-light {
+  font-family: 'SairaCondensed-ExtraLight';
+}
+
+.saira-light {
+  font-family: 'SairaCondensed-Light';
+}
+
+.saira-medium {
+  font-family: 'SairaCondensed-Medium';
+}
+
+.saira {
+  font-family: 'SairaCondensed-Regular';
+}
+
+.saira-semibold {
+  font-family: 'SairaCondensed-SemiBold';
+}
+
+.saira-thin {
+  font-family: 'SairaCondensed-Thin';
+}
+
+.gray-1 {
+  background-color: #E0E0E0;
+}
+
+.gray-2 {
+  background-color: #BDBDBD;
+}
+
+.gray-3 {
+  background-color: #838383;
+}
+
+.gray-4 {
+  background-color: #4F4F4F;
+}
+
+.text-green {
+  color: #219653;
+}
+
+.text-black {
+  color: #000000;
+}
+
+.text-blue {
+  color: #2F80ED;
+}
+
+html, body {
+  height: 100%;
+}
