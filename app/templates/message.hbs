@@ -1,0 +1,11 @@
+{{page-title "Message"}}
+
+<button type="button" {{on "click" this.sendMessage}}>Send message</button>
+
+<ul>
+  {{#each @model as |message|}}
+    <li>{{message.createdAt}} {{message.topic}}: {{message.body}}</li>
+  {{/each}}
+</ul>
+
+{{outlet}}
