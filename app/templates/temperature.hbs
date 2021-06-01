@@ -1,5 +1,13 @@
 {{page-title "Temperature"}}
-
-TEMPERATUUR
+<ul>
+{{#each this.messages.humidityMessages as |message|}}
+  <li>{{message.createdAt}} {{message.body}}</li>
+{{/each}}
+</ul>
+<ul>
+  {{#each this.messages.temperatureMessages as |message|}}
+    <li>{{message.createdAt}} {{message.body}}</li>
+  {{/each}}
+</ul>
 
 {{outlet}}

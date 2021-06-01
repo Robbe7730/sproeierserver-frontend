@@ -7,15 +7,11 @@
   </LinkTo>
 
   <SidebarButton @route='sprinkler'>
-    <span>Actieve sproeier:</span>
-    <span>{{sprinkler-name this.messages.lastActiveSprinklerMessage}}</span>
+    <ActiveSprinkler />
   </SidebarButton>
 
   <SidebarButton @route='temperature'>
-    <span>Temperatuur:</span>
-    <span>??°C</span>
-    <span>Luchtvochtigheid:</span>
-    <span>??%</span>
+    <TemperatureHumidity />
   </SidebarButton>
 
   <SidebarButton @route='battery'>
