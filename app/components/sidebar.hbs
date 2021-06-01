@@ -6,39 +6,20 @@
     <div class="f2 text-blue center">Server</div>
   </LinkTo>
 
-  <LinkTo class='ma4 w-70 flex-grow-1 gray-2 flex flex-column link text-black justify-around'
-          @route='sprinkler'>
-    <div class='mt3 f3 center'>
-      Actieve sproeier:
-    </div>
-    <div class='mb3 f3 center'>
-      Geen
-    </div>
-  </LinkTo>
+  <SidebarButton @route='sprinkler'>
+    <span>Actieve sproeier:</span>
+    <span>{{sprinkler-name this.messages.lastActiveSprinklerMessage}}</span>
+  </SidebarButton>
 
-  <LinkTo class='ma4 w-70 flex-grow-1 gray-2 flex flex-column link text-black justify-around'
-          @route='temperature'>
-    <div class='mt3 f3 center'>
-      Temperatuur:
-    </div>
-    <div class='mb3 f3 center'>
-      15°C
-    </div>
-    <div class='f3 center'>
-      Luchtvochtigheid:
-    </div>
-    <div class='mb3 f3 center'>
-      53%
-    </div>
-  </LinkTo>
+  <SidebarButton @route='temperature'>
+    <span>Temperatuur:</span>
+    <span>??°C</span>
+    <span>Luchtvochtigheid:</span>
+    <span>??%</span>
+  </SidebarButton>
 
-  <LinkTo class='ma4 w-70 flex-grow-1 gray-2 flex flex-column link text-black justify-around'
-          @route='battery'>
-    <div class='mt3 f3 center'>
-      Batterij
-    </div>
-    <div class='mb3 f3 center'>
-      72%
-    </div>
-  </LinkTo>
+  <SidebarButton @route='battery'>
+    <span>Batterij:</span>
+    <span>??%</span>
+  </SidebarButton>
 </aside>

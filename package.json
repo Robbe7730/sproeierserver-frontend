@@ -62,7 +62,8 @@
     "qunit-dom": "^1.6.0",
     "sass": "^1.34.0",
     "tachyons": "^4.12.0",
-    "tachyons-aspect-ratios": "^1.0.1"
+    "tachyons-aspect-ratios": "^1.0.1",
+    "tracked-built-ins": "^1.1.1"
   },
   "engines": {
     "node": "10.* || >= 12"
