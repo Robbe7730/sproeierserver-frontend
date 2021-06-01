@@ -8,7 +8,7 @@ export default class MessageController extends Controller {
 
   @action
   sendMessage() {
-    this.publish("sprinklers/active", "1");
+    this.publish("sprinklers/active", "1", true);
   }
 
   async publish(topic, body, retain=false) {

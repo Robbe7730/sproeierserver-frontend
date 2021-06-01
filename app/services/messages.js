@@ -13,7 +13,6 @@ export default class MessagesService extends Service {
   })
 
   async updateMessages() {
-    console.log("Updating");
     const queryResult = await this.store.query('mqtt-message', {
       sort: '-created-at',
     });
